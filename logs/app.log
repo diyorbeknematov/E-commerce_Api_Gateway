@@ -1,0 +1,672 @@
+{"time":"2024-07-29T14:49:27.198812678+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T14:49:33.310084373+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T15:29:55.963954956+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T15:30:56.725397469+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T15:31:35.510627501+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T15:32:08.071590001+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T15:32:34.824832751+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T15:33:00.266403685+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T15:33:57.104848266+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T15:34:23.428823894+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T17:02:04.78781907+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T17:03:32.686018058+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T17:05:00.407438986+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T17:21:30.866469433+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T17:22:06.126292522+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T18:50:35.499319229+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T18:52:32.475602571+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T18:52:51.210233306+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T18:53:23.388115368+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T19:05:35.187329331+05:00","level":"ERROR","msg":"Claims err"}
+{"time":"2024-07-29T19:09:50.143277413+05:00","level":"ERROR","msg":"Claims err"}
+{"time":"2024-07-29T19:11:28.08320617+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T19:14:42.050873809+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-29T19:15:05.264938311+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:32:52.699141704+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:34:00.243121583+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:38:20.587258069+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:48:49.514522204+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:50:07.778974569+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:51:08.002361463+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:54:48.515780632+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:59:43.797035075+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T10:59:59.592984982+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders"}
+{"time":"2024-07-30T10:59:59.593244851+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T11:01:38.817211501+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T11:01:50.68649842+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders"}
+{"time":"2024-07-30T11:01:50.687485581+05:00","level":"ERROR","msg":"ProducerMessage","error":"dial tcp 127.0.0.1:9092: connect: connection refused"}
+{"time":"2024-07-30T11:01:50.687576428+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T11:04:36.719392622+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders"}
+{"time":"2024-07-30T11:04:36.822895293+05:00","level":"ERROR","msg":"ProducerMessage","error":"[5] Leader Not Available: the cluster is in the middle of a leadership election and there is currently no leader for this partition and hence it is unavailable for writes"}
+{"time":"2024-07-30T11:04:36.823051705+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T11:07:56.510979231+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T11:08:06.82053861+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders"}
+{"time":"2024-07-30T11:08:07.835453425+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-07-30T11:08:42.718464025+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T11:11:24.128689086+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders"}
+{"time":"2024-07-30T11:11:25.14541101+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-07-30T11:12:39.26089004+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders"}
+{"time":"2024-07-30T11:12:40.266281616+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-07-30T11:14:15.718489433+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders"}
+{"time":"2024-07-30T11:14:16.723578928+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-07-30T11:19:20.321474611+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders"}
+{"time":"2024-07-30T11:19:21.327296213+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-07-30T12:05:38.236922856+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:16:34.912534244+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:17:23.521441988+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-07-30T12:17:23.53738029+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T12:21:42.648702961+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-07-30T12:21:42.651205588+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T12:38:11.684881596+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-30T12:38:11.738870972+05:00","level":"ERROR","msg":"Error creating user","error":"rpc error: code = Unknown desc = pq: syntax error at or near \"$5\""}
+{"time":"2024-07-30T12:38:11.738951922+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T12:39:42.964272152+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-30T12:39:43.031355854+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-07-30T12:40:24.045753183+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/5943b884-b715-4aae-a086-cd01a25e099b"}
+{"time":"2024-07-30T12:40:24.04734867+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T12:40:45.61131421+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:40:45.617139941+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-07-30T12:40:45.617206781+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T12:41:53.145833285+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:41:56.263170667+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:41:56.26522947+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-07-30T12:41:56.265297583+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T12:42:53.072013106+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:42:56.168389943+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:42:56.171251259+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-07-30T12:42:56.171357284+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T12:46:06.399593291+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:46:09.80628211+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:46:09.808096373+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-07-30T12:46:09.808178968+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T12:47:51.314762432+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:47:55.602099944+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:47:55.602172115+05:00","level":"ERROR","msg":"Error unmarshalling claims","error":"unexpected end of JSON input"}
+{"time":"2024-07-30T12:47:55.602204281+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T12:48:38.050727993+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:48:55.809209637+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:49:08.259817926+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:49:11.90864837+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:49:19.991057306+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:53:39.947816761+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:53:45.499775335+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:54:13.124762422+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T12:54:20.705962221+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T12:54:20.710297193+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"\""}
+{"time":"2024-07-30T12:54:20.710472141+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T13:04:40.643164511+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T13:04:56.895276191+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/user"}
+{"time":"2024-07-30T13:04:56.900098828+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T13:08:19.640782727+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T13:08:23.948613226+05:00","level":"INFO","msg":"Request received","method":"PUT","path":"/api/user"}
+{"time":"2024-07-30T13:08:23.961188366+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T13:12:00.686285879+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T13:14:39.47904437+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T13:14:57.400432257+05:00","level":"INFO","msg":"Request received","method":"DELETE","path":"/api/user"}
+{"time":"2024-07-30T13:14:57.414525727+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T13:15:54.573582179+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T13:17:35.022902888+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T13:17:35.025175481+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Unavailable desc = dns: A record lookup error: lookup localhost50051 on 127.0.0.53:53: server misbehaving"}
+{"time":"2024-07-30T13:17:35.025336173+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T13:17:56.717662812+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T13:17:59.939522758+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T13:17:59.970855727+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Unknown desc = (InvalidNamespace) Invalid namespace specified 'product.'"}
+{"time":"2024-07-30T13:17:59.971038626+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T13:20:37.441530376+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T13:20:37.44599701+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Unknown desc = (InvalidNamespace) Invalid namespace specified 'product.'"}
+{"time":"2024-07-30T13:20:37.446141477+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T13:21:32.924905614+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T13:21:32.928394852+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Unknown desc = (InvalidNamespace) Invalid namespace specified 'product.'"}
+{"time":"2024-07-30T13:21:32.928550657+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T13:22:01.114246495+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T13:22:01.116177975+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Unknown desc = (InvalidNamespace) Invalid namespace specified 'product.'"}
+{"time":"2024-07-30T13:22:01.116296133+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T13:23:43.975233796+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T13:23:43.981279013+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Unknown desc = (InvalidNamespace) Invalid namespace specified 'product.'"}
+{"time":"2024-07-30T13:23:43.981405875+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T13:24:41.880832672+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T13:24:41.88445189+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Unknown desc = (InvalidNamespace) Invalid namespace specified 'product.'"}
+{"time":"2024-07-30T13:24:41.884569989+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T13:29:50.019754604+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T13:29:50.073420336+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T14:28:13.630731106+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T14:28:13.642611008+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T14:28:46.00836669+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T14:28:54.089334282+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-30T14:28:54.092013788+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T14:31:34.242962752+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T14:31:52.16501358+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T14:32:45.076441112+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T14:33:07.564434136+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-30T14:33:07.579186824+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unavailable desc = error reading from server: EOF"}
+{"time":"2024-07-30T14:33:07.579318974+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T14:35:00.029998391+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-30T14:35:00.037622006+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unavailable desc = error reading from server: EOF"}
+{"time":"2024-07-30T14:35:00.037968708+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T14:38:38.019068654+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-30T14:38:38.028374669+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location15958) the limit must be positive"}
+{"time":"2024-07-30T14:38:38.028453959+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T14:40:03.883394963+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-30T14:40:03.886491857+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location15958) the limit must be positive"}
+{"time":"2024-07-30T14:40:03.886550236+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T14:47:21.155276718+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T14:47:44.690522802+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-30T14:47:44.693260883+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location15958) the limit must be positive"}
+{"time":"2024-07-30T14:47:44.693322617+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-30T14:48:47.255293874+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T14:50:41.076066833+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-30T14:50:41.079375751+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T14:51:51.454587554+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T14:52:44.943992989+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T14:52:44.954930264+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T14:54:44.606685137+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/categories"}
+{"time":"2024-07-30T14:54:44.621441071+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T14:56:02.218095431+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/categories"}
+{"time":"2024-07-30T14:56:02.247836624+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:00:11.49261753+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T15:00:30.604837288+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/reviews/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T15:00:30.620524277+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:01:35.586707979+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/reviews"}
+{"time":"2024-07-30T15:01:35.588795069+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:03:06.330204262+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/reviews/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T15:03:06.33236431+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:07:21.672431315+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T15:10:07.677389995+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T15:10:24.657189716+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/basket/{product_id}"}
+{"time":"2024-07-30T15:10:24.665308677+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:10:47.704075267+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/basket"}
+{"time":"2024-07-30T15:10:47.710982222+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:11:34.562761454+05:00","level":"INFO","msg":"Request received","method":"DELETE","path":"/api/basket/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T15:11:34.563528202+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:11:43.223247949+05:00","level":"INFO","msg":"Request received","method":"DELETE","path":"/api/basket/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T15:11:43.223896877+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:19:39.728603734+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T15:19:56.432857242+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/basket/{product_id}"}
+{"time":"2024-07-30T15:19:56.435020471+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:21:34.265211698+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T15:22:01.388336172+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/basket/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T15:22:01.389995734+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:22:36.883266369+05:00","level":"INFO","msg":"Request received","method":"DELETE","path":"/api/basket/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T15:22:36.883964366+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:23:32.708471144+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T15:23:34.261393652+05:00","level":"INFO","msg":"Request received","method":"DELETE","path":"/api/basket/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T15:23:34.263400747+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T15:24:24.806993453+05:00","level":"INFO","msg":"Request received","method":"DELETE","path":"/api/basket/8b61cfde-32fd-413c-9c6e-24ea4b1fc73a"}
+{"time":"2024-07-30T15:24:24.807750017+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-30T16:45:50.339490704+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T16:48:51.278039379+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T16:53:20.435671538+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T17:35:40.357154759+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-30T18:33:30.419875993+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T13:41:10.366292755+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T13:45:19.25467257+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T13:48:42.733974791+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T13:51:39.974013611+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T13:52:53.8792901+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:10:55.257977984+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:11:11.793095309+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-31T14:11:11.7935651+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:12:26.29080648+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:12:29.846666297+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-31T14:12:29.84715554+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:13:56.892290201+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:14:00.189531622+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-31T14:14:00.189971651+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:15:15.294444922+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:15:19.014897658+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-31T14:15:19.015387165+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:17:12.727772766+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:17:32.301133106+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-31T14:17:32.301709066+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:19:37.543055034+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:19:41.839988592+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-31T14:19:41.840568236+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:20:09.862148481+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:20:12.260989165+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-31T14:20:12.261467647+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:24:31.379227777+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T14:24:37.856764954+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/users"}
+{"time":"2024-07-31T14:24:37.857372266+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T14:25:15.381657821+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T14:25:15.421117965+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T14:28:44.040443675+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T14:28:44.078264623+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T14:29:46.854194306+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T14:29:46.859663149+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key images: cannot decode document into []string"}
+{"time":"2024-07-31T14:29:46.859778597+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:30:18.312739536+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T14:30:18.316850727+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key images: cannot decode document into []string"}
+{"time":"2024-07-31T14:30:18.316972596+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:34:20.732229068+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T14:34:20.737562092+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T14:36:23.524360911+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T14:36:23.530757455+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T14:36:44.85245932+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T14:36:44.857410227+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key images.0: cannot decode embedded document into a string type"}
+{"time":"2024-07-31T14:36:44.857538549+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:37:25.007453879+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T14:37:25.009789021+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T14:37:51.858357385+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T14:37:51.862442503+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key images.0: cannot decode embedded document into a string type"}
+{"time":"2024-07-31T14:37:51.862565427+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:54:00.345044899+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T14:54:00.354862007+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Internal desc = grpc: error unmarshalling request: proto: cannot parse invalid wire-format data"}
+{"time":"2024-07-31T14:54:00.355031585+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T14:56:08.887016659+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T14:56:08.890415909+05:00","level":"ERROR","msg":"CreateProducts","error":"rpc error: code = Internal desc = grpc: error unmarshalling request: proto: cannot parse invalid wire-format data"}
+{"time":"2024-07-31T14:56:08.89055551+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:02:13.058774542+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:02:23.795274526+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:03:44.940445702+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T15:03:44.993410591+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T15:05:28.797611022+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T15:05:28.827613784+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T15:06:17.250217502+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T15:06:17.27499498+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T15:08:37.541520823+05:00","level":"INFO","msg":"Request received","method":"PUT","path":"/api/products/8905a99a-5886-4d45-8ec4-cc36621932f7"}
+{"time":"2024-07-31T15:08:37.585073675+05:00","level":"ERROR","msg":"UpdateProducts","error":"rpc error: code = Unknown desc = error decoding key images: cannot decode array into a string type"}
+{"time":"2024-07-31T15:08:37.58561441+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:09:25.127826601+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendations"}
+{"time":"2024-07-31T15:09:25.167914573+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"recommendations\""}
+{"time":"2024-07-31T15:09:25.168096548+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:11:36.768352121+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendations"}
+{"time":"2024-07-31T15:11:36.785820953+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"recommendations\""}
+{"time":"2024-07-31T15:11:36.785916398+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:12:06.792657993+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendations"}
+{"time":"2024-07-31T15:12:06.799063924+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"recommendations\""}
+{"time":"2024-07-31T15:12:06.799360956+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:14:13.746393237+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendations"}
+{"time":"2024-07-31T15:14:13.794594242+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"recommendations\""}
+{"time":"2024-07-31T15:14:13.795014734+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:14:46.593307717+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:14:49.254802173+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendations"}
+{"time":"2024-07-31T15:14:49.261377125+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"recommendations\""}
+{"time":"2024-07-31T15:14:49.261831078+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:16:44.742695154+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:16:59.519016797+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:16:59.546084558+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"recommendation\""}
+{"time":"2024-07-31T15:16:59.546263598+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:18:40.070974043+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:18:49.943784237+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:18:49.979073409+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"recommendation\""}
+{"time":"2024-07-31T15:18:49.979204928+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:23:25.853068919+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:23:25.875239241+05:00","level":"ERROR","msg":"Error getting user","error":"rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: \"recommendation\""}
+{"time":"2024-07-31T15:23:25.875419405+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:26:29.174982087+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:26:38.804572413+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:26:38.805021144+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:26:59.969032363+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:26:59.969342402+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:27:10.860032257+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:27:10.860482402+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:32:17.666055671+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:33:28.83614058+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:33:38.236888402+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:33:38.237232218+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:33:47.393115688+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:33:47.393465104+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:35:17.33200929+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:35:17.333356575+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:35:33.50939863+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:35:33.511092447+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:36:31.854471288+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:36:34.187188182+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:36:34.187640861+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:37:12.580805279+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:37:15.26900422+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/recommendation"}
+{"time":"2024-07-31T15:37:15.401286702+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T15:39:28.478425707+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T15:40:00.039568499+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/8905a99a-5886-4d45-8ec4-cc36621932f7"}
+{"time":"2024-07-31T15:40:00.050432713+05:00","level":"ERROR","msg":"ProducerMessage","error":"dial tcp 127.0.0.1:9092: connect: connection refused"}
+{"time":"2024-07-31T15:40:00.051214837+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:40:37.773481858+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/8905a99a-5886-4d45-8ec4-cc36621932f7"}
+{"time":"2024-07-31T15:40:38.110430185+05:00","level":"ERROR","msg":"ProducerMessage","error":"[5] Leader Not Available: the cluster is in the middle of a leadership election and there is currently no leader for this partition and hence it is unavailable for writes"}
+{"time":"2024-07-31T15:40:38.126499041+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:45:44.011950496+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/reviews"}
+{"time":"2024-07-31T15:45:44.043095207+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T15:46:56.042005872+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/reviews/8905a99a-5886-4d45-8ec4-cc36621932f7"}
+{"time":"2024-07-31T15:46:56.36964137+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T15:49:28.063212013+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/categories"}
+{"time":"2024-07-31T15:49:28.245304318+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T15:50:04.499041504+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T15:50:04.636231903+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T15:52:33.765008693+05:00","level":"INFO","msg":"Request received","method":"PUT","path":"/api/products/8905a99a-5886-4d45-8ec4-cc36621932f7"}
+{"time":"2024-07-31T15:52:33.859310605+05:00","level":"ERROR","msg":"UpdateProducts","error":"rpc error: code = Unknown desc = error decoding key images: cannot decode array into a string type"}
+{"time":"2024-07-31T15:52:33.859438497+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T15:54:13.342811809+05:00","level":"INFO","msg":"Request received","method":"PUT","path":"/api/products/8905a99a-5886-4d45-8ec4-cc36621932f7"}
+{"time":"2024-07-31T15:54:13.475153242+05:00","level":"ERROR","msg":"UpdateProducts","error":"rpc error: code = Unknown desc = error decoding key images: cannot decode array into a string type"}
+{"time":"2024-07-31T15:54:13.475312687+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T16:19:28.592937539+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T16:19:28.603248258+05:00","level":"ERROR","msg":"Error creating Casbin adapter","error":"pq: password authentication failed for user \"postgres\""}
+{"time":"2024-07-31T16:19:28.603515393+05:00","level":"ERROR","msg":"Error initializing enforcer","error":"pq: password authentication failed for user \"postgres\""}
+{"time":"2024-07-31T16:20:44.273967652+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T16:32:23.589973004+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:32:23.623423163+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category.name'"}
+{"time":"2024-07-31T16:32:23.623592289+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T16:37:05.711815836+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:37:05.717038474+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category.name'"}
+{"time":"2024-07-31T16:37:05.717155121+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T16:38:16.215030436+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:38:16.219227033+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category.name'"}
+{"time":"2024-07-31T16:38:16.219516104+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T16:41:19.956405763+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:41:20.06654617+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:43:18.95713984+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:43:18.963825982+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:44:02.555869976+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:44:02.563874094+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:44:33.329565094+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:44:33.342346799+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:45:12.278685865+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:45:12.286605456+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:45:49.111012872+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:45:49.118534358+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:46:25.825206226+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:46:25.832818862+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:49:25.457262302+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:49:25.462158418+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:50:47.736200178+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:50:47.742435988+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:51:09.057627915+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:51:09.069032911+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:52:02.205191429+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:52:02.211114073+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:54:07.035994647+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:54:07.04378403+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:54:37.832944951+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:54:37.836724669+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T16:54:51.49984846+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:54:51.501770901+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'created_at'"}
+{"time":"2024-07-31T16:54:51.501872291+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T16:55:39.909501853+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:55:39.913492566+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'created_at'"}
+{"time":"2024-07-31T16:55:39.913642987+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T16:56:41.930412147+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T16:56:41.934042504+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T17:06:04.295478693+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T17:06:04.305909934+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T17:09:12.510316731+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T17:09:12.514791001+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'name'"}
+{"time":"2024-07-31T17:09:12.514916407+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T17:10:13.751059252+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T17:10:13.755000629+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T17:13:55.000113306+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T17:13:55.006528326+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key price: float64 can only be truncated to a lower precision type when truncation is enabled"}
+{"time":"2024-07-31T17:13:55.006727002+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T17:23:29.950186916+05:00","level":"INFO","msg":"Request received","method":"PUT","path":"/api/products/6b1c1a4d-f63e-4d72-b3f0-df843b25f8c9"}
+{"time":"2024-07-31T17:23:29.955157619+05:00","level":"ERROR","msg":"UpdateProducts","error":"rpc error: code = Unknown desc = error decoding key images: cannot decode array into a products.Images"}
+{"time":"2024-07-31T17:23:29.955303661+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T17:26:41.064557551+05:00","level":"INFO","msg":"Request received","method":"PUT","path":"/api/products/6b1c1a4d-f63e-4d72-b3f0-df843b25f8c9"}
+{"time":"2024-07-31T17:26:41.071889086+05:00","level":"ERROR","msg":"UpdateProducts","error":"rpc error: code = Unknown desc = error decoding key images: cannot decode array into a products.Images"}
+{"time":"2024-07-31T17:26:41.072017255+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T17:27:01.007265766+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T17:27:01.015843469+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key images.1: cannot decode array into a products.Images"}
+{"time":"2024-07-31T17:27:01.015980605+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T17:35:06.55081797+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T17:35:28.796098028+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T17:35:28.79899026+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:50051: connect: connection refused\""}
+{"time":"2024-07-31T17:35:28.799103541+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T17:35:55.629963681+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T17:35:55.638954644+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key images.1: cannot decode array into a products.Images"}
+{"time":"2024-07-31T17:35:55.639063788+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T19:24:50.986669884+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T19:32:10.286229948+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T19:32:10.323634791+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T19:35:31.951725604+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T19:35:31.974569102+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T19:36:23.729838238+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T19:36:23.752634863+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key images.0: cannot decode embedded document into a string type"}
+{"time":"2024-07-31T19:36:23.753113965+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T19:37:52.775896373+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T19:37:52.779931773+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T19:38:38.219826789+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-07-31T19:38:38.229605818+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T19:40:10.91824081+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T19:40:10.931166859+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T19:45:57.279155856+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T19:45:57.319435107+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = error decoding key discount.status: cannot decode string into a boolean"}
+{"time":"2024-07-31T19:45:57.319750604+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T19:51:04.620652957+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T19:51:04.628799951+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T20:13:08.824932655+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T20:13:08.915950654+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category.name'"}
+{"time":"2024-07-31T20:13:08.916372794+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T20:14:20.672253575+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T20:14:20.778258283+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T20:14:31.569885713+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T20:14:31.585485575+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category.name'"}
+{"time":"2024-07-31T20:14:31.58611759+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T20:15:32.912539859+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-07-31T20:15:32.913096917+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-07-31T20:16:54.858353825+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-07-31T20:16:54.86467269+05:00","level":"ERROR","msg":"ProducerMessage","error":"dial tcp 127.0.0.1:9092: connect: connection refused"}
+{"time":"2024-07-31T20:16:54.864808746+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T20:17:16.524988101+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-07-31T20:17:16.67553478+05:00","level":"ERROR","msg":"ProducerMessage","error":"[5] Leader Not Available: the cluster is in the middle of a leadership election and there is currently no leader for this partition and hence it is unavailable for writes"}
+{"time":"2024-07-31T20:17:16.675715324+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T20:17:38.679546968+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-07-31T20:17:39.709385388+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-07-31T20:20:20.15758899+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-07-31T20:20:21.177179369+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-07-31T23:32:06.146876568+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-07-31T23:32:46.83628186+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:32:46.892995135+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:34:54.167565705+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:34:54.169861922+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category.name'"}
+{"time":"2024-07-31T23:34:54.16997486+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:38:22.108036604+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:38:22.118616321+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category_name'"}
+{"time":"2024-07-31T23:38:22.118735002+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:40:03.29090947+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:40:03.294944084+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category_name'"}
+{"time":"2024-07-31T23:40:03.295110678+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:40:08.883421473+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:40:08.88542495+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category_name'"}
+{"time":"2024-07-31T23:40:08.885534678+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:41:51.043697935+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:41:51.049582528+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category_name'"}
+{"time":"2024-07-31T23:41:51.049698333+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:43:33.440541078+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:43:33.44447684+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category.name'"}
+{"time":"2024-07-31T23:43:33.444607833+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:45:54.32341538+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:45:54.327377404+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category_name'"}
+{"time":"2024-07-31T23:45:54.327482902+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:47:57.76433989+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:47:57.771266607+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'category.name'"}
+{"time":"2024-07-31T23:47:57.771411973+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:48:07.430398426+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:48:07.4379248+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:48:44.343937046+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:48:44.345935397+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'name'"}
+{"time":"2024-07-31T23:48:44.346021025+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:52:10.236038293+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:52:10.243364986+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'name'"}
+{"time":"2024-07-31T23:52:10.243519499+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:53:37.529770324+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:53:37.534752971+05:00","level":"ERROR","msg":"GetAllProduct","error":"rpc error: code = Unknown desc = (Location40324) Unrecognized pipeline stage name: 'name'"}
+{"time":"2024-07-31T23:53:37.534891262+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-07-31T23:56:27.821132776+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:56:27.841421841+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:57:49.450693564+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:57:49.462979771+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:58:03.187141028+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:58:03.199952501+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:58:17.83938246+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:58:17.844454189+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:58:27.184551863+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:58:27.190537816+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:58:38.709520892+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:58:38.714568531+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:58:54.792799843+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:58:54.798495217+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:59:03.190509619+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:59:03.203720531+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-07-31T23:59:44.233287479+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-07-31T23:59:44.241456586+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:01:51.958354273+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:01:51.971490382+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:04:00.589278313+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:04:00.599814169+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:04:17.731989485+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:04:17.732288702+05:00","level":"ERROR","msg":"ShouldBindQuery","error":"strconv.ParseBool: parsing \"-1\": invalid syntax"}
+{"time":"2024-08-01T00:04:17.732335242+05:00","level":"INFO","msg":"Response sent","status":400}
+{"time":"2024-08-01T00:04:25.905553293+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:04:25.912105981+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:04:41.074782821+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:04:41.081916805+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:04:57.765619629+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:04:57.773049829+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:05:14.686934434+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:05:14.693768568+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:07:16.961310499+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:07:16.967294789+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:08:48.867797449+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:08:48.872826779+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:09:00.411824343+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:09:00.416739061+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:10:03.256930655+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:10:03.266281572+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:10:27.61176447+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:10:27.612341989+05:00","level":"ERROR","msg":"ShouldBindQuery","error":"strconv.ParseBool: parsing \"-1\": invalid syntax"}
+{"time":"2024-08-01T00:10:27.612439268+05:00","level":"INFO","msg":"Response sent","status":400}
+{"time":"2024-08-01T00:10:36.29180816+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:10:36.297256498+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:14:57.77258325+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:14:57.782390049+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:17:42.134032677+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:17:42.157293241+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:19:07.535329191+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:19:07.550683207+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:20:48.794266919+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:20:48.801792911+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:22:42.576449426+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T00:23:10.859824557+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:23:10.870616192+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:23:30.092839543+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:23:30.101488296+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:23:47.452855183+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:23:47.459922697+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:23:58.718089272+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:23:58.728626544+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:24:02.883484221+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:24:02.893293164+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:24:08.849860979+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:24:08.860184591+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:24:20.856748723+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:24:20.867287135+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:24:36.31038001+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:24:36.317474956+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:24:51.536490662+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:24:51.545018669+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:25:41.697047786+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:25:41.702875637+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:25:46.066527643+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:25:46.072097829+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:26:01.641120516+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:26:01.64932354+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:26:17.384338109+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:26:17.392270756+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:28:10.848412245+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:28:10.862114744+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:28:23.563457613+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:28:23.575339574+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:28:43.90561655+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:28:43.916651489+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:28:55.231656427+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:28:55.243156687+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:29:17.184590111+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:29:17.192062079+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:29:39.306683484+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:29:39.314131147+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:30:12.17284706+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:30:12.180371701+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:30:21.475987034+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:30:21.482973994+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:30:50.311583813+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:30:50.32108752+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:33:35.609821079+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:33:35.618365945+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:33:46.061802792+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:33:46.068572573+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:33:59.83497627+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:33:59.840812819+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:34:18.682938385+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:34:18.688942204+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:34:25.152185939+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:34:25.159966429+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:36:17.769759865+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:36:17.793673194+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:36:27.1680891+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:36:27.17875176+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:36:34.206089743+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:36:34.216931879+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:36:47.878969943+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:36:47.889359527+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:37:05.357372512+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:37:05.366395635+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:37:11.24156334+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:37:11.252761323+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:37:17.579338308+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:37:17.590676874+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:37:25.102744963+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:37:25.113456911+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:37:33.583720361+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:37:33.594011902+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:37:41.912818+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:37:41.922582552+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:38:28.599994709+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:38:28.611049032+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:39:16.149565773+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:39:16.159888803+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:42:29.866444657+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:42:29.877661979+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:44:08.784955995+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:44:08.799420558+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:44:22.291278002+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:44:22.304712172+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:44:32.826206705+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:44:32.841310408+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:44:44.053753211+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:44:44.063484584+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:44:54.136385311+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:44:54.150555306+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:45:01.989608809+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:45:02.001889562+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:46:22.962819345+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:46:22.975678463+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:47:01.173131049+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:47:01.193345711+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:47:09.837506187+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:47:09.847818169+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:47:36.001746077+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:47:36.013000388+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:47:42.391891608+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T00:47:42.401275819+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:51:39.786436241+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users"}
+{"time":"2024-08-01T00:51:39.800715504+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:52:05.035395815+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T00:52:05.035704946+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-08-01T00:52:28.188190079+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T00:52:28.202116573+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:56:46.056152503+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T00:56:46.062278638+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:57:27.668589957+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T00:57:27.67088792+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T00:58:55.903957056+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T00:59:28.342371468+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T00:59:42.365472031+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T00:59:42.371468079+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T01:01:26.211079646+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T01:01:26.213679012+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T01:02:36.134339895+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T01:02:36.140822918+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T01:02:42.732507098+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T01:02:42.734457156+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T01:02:49.26841627+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T01:02:49.270758789+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T01:03:36.435379833+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T01:03:36.437872254+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T01:04:05.828852153+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
+{"time":"2024-08-01T01:04:05.831682936+05:00","level":"INFO","msg":"Response sent","status":200}

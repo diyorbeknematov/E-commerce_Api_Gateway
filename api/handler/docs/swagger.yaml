@@ -1,0 +1,1741 @@
+definitions:
+  categories.Category:
+    properties:
+      description:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+    type: object
+  categories.CreateCategoryRequest:
+    properties:
+      description:
+        type: string
+      name:
+        type: string
+    type: object
+  categories.CreateCategoryResponse:
+    properties:
+      id:
+        type: string
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+  categories.DeleteCategoryResponse:
+    properties:
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+  categories.GetAllCategoryResponse:
+    properties:
+      catygories:
+        items:
+          $ref: '#/definitions/categories.Category'
+        type: array
+      limit:
+        type: integer
+      offset:
+        type: integer
+      total:
+        type: integer
+    type: object
+  categories.UpdateCategoryRequest:
+    properties:
+      description:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+    type: object
+  categories.UpdateCategoryResponse:
+    properties:
+      description:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+    type: object
+  models.Authenticated:
+    properties:
+      password:
+        type: string
+    type: object
+  models.CreateReview:
+    properties:
+      comment:
+        type: string
+      rating:
+        type: integer
+    type: object
+  models.Discount:
+    properties:
+      discount_price:
+        type: number
+      status:
+        type: boolean
+    type: object
+  models.ErrorResponse:
+    properties:
+      error:
+        type: string
+      message:
+        type: string
+    type: object
+  models.UpdateProduct:
+    properties:
+      description:
+        type: string
+      discount:
+        $ref: '#/definitions/models.Discount'
+      images:
+        type: string
+      name:
+        type: string
+      price:
+        type: number
+      stock:
+        type: integer
+    type: object
+  models.UpdateReview:
+    properties:
+      comment:
+        type: string
+      product_id:
+        type: string
+      rating:
+        type: integer
+    type: object
+  models.UpdateReviewById:
+    properties:
+      comment:
+        type: string
+      product_id:
+        type: string
+      rating:
+        type: integer
+      user_id:
+        type: string
+    type: object
+  models.UpdateUser:
+    properties:
+      address:
+        type: string
+      city:
+        type: string
+      country:
+        type: string
+      email:
+        type: string
+      fullname:
+        type: string
+      image:
+        type: string
+      new_passwrod:
+        type: string
+      password:
+        type: string
+      phone_number:
+        type: string
+      postal_code:
+        type: string
+      state:
+        type: string
+      username:
+        type: string
+    type: object
+  models.UpdateUserById:
+    properties:
+      address:
+        type: string
+      city:
+        type: string
+      country:
+        type: string
+      email:
+        type: string
+      fullname:
+        type: string
+      image:
+        type: string
+      phone:
+        type: string
+      postal_code:
+        type: string
+      role:
+        type: string
+      state:
+        type: string
+      username:
+        type: string
+    type: object
+  products.AddToBasketResponse:
+    properties:
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+  products.BasketResponse:
+    properties:
+      products:
+        items:
+          $ref: '#/definitions/products.Order'
+        type: array
+      userId:
+        type: string
+    type: object
+  products.CreateProductRequest:
+    properties:
+      category_id:
+        type: string
+      description:
+        type: string
+      discount:
+        $ref: '#/definitions/products.Discount'
+      images:
+        type: string
+      name:
+        type: string
+      price:
+        type: number
+      stock:
+        type: integer
+    type: object
+  products.CreateProductResponse:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+  products.DeleteBasketResponse:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+  products.DeleteProductResponse:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+  products.Discount:
+    properties:
+      discount_price:
+        type: number
+      status:
+        type: boolean
+    type: object
+  products.GetAllProductResponse:
+    properties:
+      limit:
+        type: integer
+      offset:
+        type: integer
+      products:
+        items:
+          $ref: '#/definitions/products.Product'
+        type: array
+      total:
+        type: integer
+    type: object
+  products.GetByIdProductResponse:
+    properties:
+      created_at:
+        type: string
+      description:
+        type: string
+      discount:
+        $ref: '#/definitions/products.Discount'
+      id:
+        type: string
+      images:
+        type: string
+      name:
+        type: string
+      price:
+        type: number
+      stock:
+        type: integer
+    type: object
+  products.GetPurchasedPResponse:
+    properties:
+      limit:
+        type: integer
+      orders:
+        items:
+          $ref: '#/definitions/products.Order'
+        type: array
+      page:
+        type: integer
+      total:
+        type: integer
+    type: object
+  products.GetRecommendationsResponse:
+    properties:
+      products:
+        items:
+          $ref: '#/definitions/products.Product'
+        type: array
+    type: object
+  products.Order:
+    properties:
+      id:
+        type: string
+      price:
+        type: number
+      purchase_date:
+        type: string
+      quantity:
+        type: integer
+      user_id:
+        type: string
+    type: object
+  products.Product:
+    properties:
+      description:
+        type: string
+      discount:
+        $ref: '#/definitions/products.Discount'
+      id:
+        type: string
+      images:
+        items:
+          type: string
+        type: array
+      name:
+        type: string
+      price:
+        type: number
+      stock:
+        type: integer
+    type: object
+  products.UpdateProductResponse:
+    properties:
+      description:
+        type: string
+      discount:
+        $ref: '#/definitions/products.Discount'
+      images:
+        items:
+          type: string
+        type: array
+      name:
+        type: string
+      price:
+        type: number
+      stock:
+        type: integer
+    type: object
+  reviews.CreateReviewRequest:
+    properties:
+      comment:
+        type: string
+      product_id:
+        type: string
+      rating:
+        type: integer
+      user_id:
+        type: string
+    type: object
+  reviews.CreateReviewResponse:
+    properties:
+      comment:
+        type: string
+      id:
+        type: string
+      product_id:
+        type: string
+      rating:
+        type: integer
+      user_id:
+        type: string
+    type: object
+  reviews.DeleteReviewResponse:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+  reviews.GetAllReviewsRequest:
+    properties:
+      limit:
+        type: integer
+      offset:
+        type: integer
+      search_by:
+        type: string
+      sort_by:
+        type: integer
+    type: object
+  reviews.GetReviewsByPIdResponse:
+    properties:
+      limit:
+        type: integer
+      page:
+        type: integer
+      reviews:
+        items:
+          $ref: '#/definitions/reviews.Review'
+        type: array
+      total:
+        type: integer
+    type: object
+  reviews.Review:
+    properties:
+      comment:
+        type: string
+      id:
+        type: string
+      product_id:
+        type: string
+      rating:
+        type: integer
+      user_id:
+        type: string
+    type: object
+  reviews.UpdateReviewResponse:
+    properties:
+      comment:
+        type: string
+      id:
+        type: string
+      product_id:
+        type: string
+      rating:
+        type: integer
+      user_id:
+        type: string
+    type: object
+  user.CreateUserRequest:
+    properties:
+      email:
+        type: string
+      fullName:
+        type: string
+      password:
+        type: string
+      phone:
+        type: string
+      role:
+        type: string
+      username:
+        type: string
+    type: object
+  user.CreateUserResponse:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+  user.DeleteUserResponse:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+  user.GetAllUsersResponse:
+    properties:
+      total_count:
+        type: integer
+      users:
+        items:
+          $ref: '#/definitions/user.GetUserResponse'
+        type: array
+    type: object
+  user.GetUserResponse:
+    properties:
+      email:
+        type: string
+      fullName:
+        type: string
+      id:
+        type: string
+      image:
+        type: string
+      phone:
+        type: string
+      role:
+        type: string
+      username:
+        type: string
+    type: object
+  user.UpdateUserByIdResponse:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+  user.UpdateUserResponse:
+    properties:
+      message:
+        type: string
+      success:
+        type: boolean
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: api gateway service
+  title: Api Getaway
+  version: "1.0"
+paths:
+  /api/basket:
+    get:
+      consumes:
+      - application/json
+      description: Get products in the basket
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.BasketResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get Basket
+      tags:
+      - Basket
+  /api/basket/{product_id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete a product from the basket
+      parameters:
+      - description: Product ID
+        in: path
+        name: product_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.DeleteBasketResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Delete from Basket
+      tags:
+      - Basket
+    post:
+      consumes:
+      - application/json
+      description: Add a product to the basket
+      parameters:
+      - description: Product ID
+        in: path
+        name: product_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.AddToBasketResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Add to Basket
+      tags:
+      - Basket
+  /api/categories:
+    get:
+      consumes:
+      - application/json
+      description: Get all categories
+      parameters:
+      - description: Page number
+        in: query
+        name: page
+        required: true
+        type: integer
+      - description: Limit number of categories per page
+        in: query
+        name: limit
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/categories.GetAllCategoryResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get All Categories
+      tags:
+      - Category
+    post:
+      consumes:
+      - application/json
+      description: Create a new category
+      parameters:
+      - description: Category to create
+        in: body
+        name: category
+        required: true
+        schema:
+          $ref: '#/definitions/categories.CreateCategoryRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/categories.CreateCategoryResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Create Category
+      tags:
+      - Category
+  /api/categories/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete an existing category
+      parameters:
+      - description: Category ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/categories.DeleteCategoryResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Delete Category
+      tags:
+      - Category
+    put:
+      consumes:
+      - application/json
+      description: Update an existing category
+      parameters:
+      - description: Category to update
+        in: body
+        name: category
+        required: true
+        schema:
+          $ref: '#/definitions/categories.UpdateCategoryRequest'
+      - description: Category ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/categories.UpdateCategoryResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Update Category
+      tags:
+      - Category
+  /api/orders/{product_id}:
+    get:
+      consumes:
+      - application/json
+      description: Get orders  by product id
+      parameters:
+      - description: productId
+        in: path
+        name: product_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get Orders by product id
+      tags:
+      - Order
+    post:
+      consumes:
+      - application/json
+      description: Create a new order
+      parameters:
+      - description: productId
+        in: path
+        name: product_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Post Order
+      tags:
+      - Order
+  /api/products:
+    post:
+      consumes:
+      - application/json
+      description: Create a new product
+      parameters:
+      - description: Create product
+        in: body
+        name: product
+        required: true
+        schema:
+          $ref: '#/definitions/products.CreateProductRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/products.CreateProductResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Create Product
+      tags:
+      - Product
+  /api/products/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete an existing product
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.DeleteProductResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Delete Product
+      tags:
+      - Product
+    get:
+      consumes:
+      - application/json
+      description: Get a product by ID
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.GetByIdProductResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get Product by ID
+      tags:
+      - Product
+    put:
+      consumes:
+      - application/json
+      description: Update an existing product
+      parameters:
+      - description: Product ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Update product
+        in: body
+        name: product
+        required: true
+        schema:
+          $ref: '#/definitions/models.UpdateProduct'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.UpdateProductResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Update Product
+      tags:
+      - Product
+  /api/products/list:
+    get:
+      consumes:
+      - application/json
+      description: Get all products
+      parameters:
+      - description: Page number
+        in: query
+        name: Page
+        required: true
+        type: integer
+      - description: Limit number of products per page
+        in: query
+        name: Limit
+        required: true
+        type: integer
+      - description: Product name
+        in: query
+        name: Name
+        type: string
+      - description: Product category
+        in: query
+        name: Category
+        type: string
+      - description: Product discount
+        in: query
+        name: Discount
+        type: integer
+      - description: Product price
+        in: query
+        name: PriceOrder
+        type: number
+      - description: Product rating
+        in: query
+        name: RatingOrder
+        type: integer
+      - description: Product comment
+        in: query
+        name: CommentOrder
+        type: integer
+      - description: Product is new
+        in: query
+        name: Newest
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.GetAllProductResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get All Products
+      tags:
+      - Product
+  /api/reviews:
+    get:
+      consumes:
+      - application/json
+      description: Get all reviews for a product
+      parameters:
+      - description: Product ID
+        in: path
+        name: product_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reviews.GetAllReviewsRequest'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get all reviews
+      tags:
+      - Review
+    post:
+      consumes:
+      - application/json
+      description: Create a new review for a product
+      parameters:
+      - description: Review to create
+        in: body
+        name: review
+        required: true
+        schema:
+          $ref: '#/definitions/reviews.CreateReviewRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/reviews.CreateReviewResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Create Review by ProductId
+      tags:
+      - Review
+  /api/reviews/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete an existing review
+      parameters:
+      - description: Review ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reviews.DeleteReviewResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Delete Review
+      tags:
+      - Review
+    put:
+      consumes:
+      - application/json
+      description: Update an existing review
+      parameters:
+      - description: Review ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Review to update
+        in: body
+        name: review
+        required: true
+        schema:
+          $ref: '#/definitions/models.UpdateReview'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reviews.UpdateReviewResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Update Review
+      tags:
+      - Review
+  /api/reviews/{product_id}:
+    get:
+      consumes:
+      - application/json
+      description: Get reviews by ProductId
+      parameters:
+      - description: Product ID
+        in: path
+        name: product_id
+        required: true
+        type: string
+      - description: Page
+        in: query
+        name: Page
+        required: true
+        type: integer
+      - description: Limit
+        in: query
+        name: Limit
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reviews.GetReviewsByPIdResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      tags:
+      - Review
+    post:
+      consumes:
+      - application/json
+      description: Create a new review
+      parameters:
+      - description: Review to create
+        in: body
+        name: review
+        required: true
+        schema:
+          $ref: '#/definitions/models.CreateReview'
+      - description: Product ID
+        in: path
+        name: product_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/reviews.CreateReviewResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Create Review
+      tags:
+      - Review
+  /api/reviews/admin/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete an existing review
+      parameters:
+      - description: Review ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reviews.DeleteReviewResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Delete Review
+      tags:
+      - Review
+    put:
+      consumes:
+      - application/json
+      description: Update an existing review
+      parameters:
+      - description: Review ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Review to update
+        in: body
+        name: review
+        required: true
+        schema:
+          $ref: '#/definitions/models.UpdateReviewById'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/reviews.UpdateReviewResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties: true
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Update Review
+      tags:
+      - Review
+  /api/users:
+    delete:
+      consumes:
+      - application/json
+      description: Delete user by token
+      parameters:
+      - description: User Password
+        in: body
+        name: password
+        required: true
+        schema:
+          $ref: '#/definitions/models.Authenticated'
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            $ref: '#/definitions/user.DeleteUserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Delete User
+      tags:
+      - User
+    get:
+      consumes:
+      - application/json
+      description: Get user by token
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.GetUserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get user
+      tags:
+      - User
+    post:
+      consumes:
+      - application/json
+      description: Create user for admin
+      parameters:
+      - description: create user
+        in: body
+        name: CreateUser
+        required: true
+        schema:
+          $ref: '#/definitions/user.CreateUserRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.CreateUserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Create User
+      tags:
+      - User
+    put:
+      consumes:
+      - application/json
+      description: Update user by token
+      parameters:
+      - description: update user
+        in: body
+        name: UpdateUser
+        required: true
+        schema:
+          $ref: '#/definitions/models.UpdateUser'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.UpdateUserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Update User
+      tags:
+      - User
+  /api/users/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete a user by ID for admin
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.DeleteUserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Delete User By ID
+      tags:
+      - User
+    get:
+      consumes:
+      - application/json
+      description: Get user by Id for admin
+      parameters:
+      - description: user id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.GetUserResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get User By ID
+      tags:
+      - User
+  /api/users/list:
+    get:
+      consumes:
+      - application/json
+      description: Get all users for admin
+      parameters:
+      - description: Full Name filter
+        in: query
+        name: FullName
+        type: string
+      - description: City filter
+        in: query
+        name: City
+        type: string
+      - description: State filter
+        in: query
+        name: State
+        type: string
+      - description: Country filter
+        in: query
+        name: Country
+        type: string
+      - description: Limit of records
+        in: query
+        name: Limit
+        required: true
+        type: integer
+      - description: Offset for pagination
+        in: query
+        name: Offset
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/user.GetAllUsersResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get All Users
+      tags:
+      - User
+  /api/users/products:
+    get:
+      consumes:
+      - application/json
+      description: Get user's orders
+      parameters:
+      - description: Page Limit
+        in: query
+        name: limit
+        required: true
+        type: integer
+      - description: Page Offset
+        in: query
+        name: offset
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.GetPurchasedPResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get User Orders
+      tags:
+      - User
+  /api/users/products/{id}:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Page Limit
+        in: query
+        name: limit
+        required: true
+        type: integer
+      - description: Page Offset
+        in: query
+        name: page
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.GetPurchasedPResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get User Bought Products
+      tags:
+      - User
+  /api/users/recommendation:
+    get:
+      consumes:
+      - application/json
+      description: Get user recommendations
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/products.GetRecommendationsResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get User Recommendations
+      tags:
+      - User
+  /products/media/:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Api for upload a new photo
+      parameters:
+      - description: createUserModel
+        in: formData
+        name: file
+        required: true
+        type: file
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: UploadMediaProduct
+      tags:
+      - Product
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
