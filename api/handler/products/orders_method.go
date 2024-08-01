@@ -3,6 +3,7 @@ package phandler
 import (
 	"api-geteway/api/token"
 	"api-geteway/generated/products"
+	"api-geteway/models"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -126,6 +127,7 @@ func (h *productHandlerIml) GetOrdersByProductId(ctx *gin.Context) {
 // @Accept json
 // @Produce json
 // @Param product_id path string true "Product ID"
+// @Param product body models.AddToBasket true "Add to basket request"
 // @Success 200 {object} products.AddToBasketResponse
 // @Failure 400 {object} map[string]interface{}
 // @Failure 404 {object} map[string]interface{}
@@ -146,10 +148,20 @@ func (h *productHandlerIml) AddToBasket(ctx *gin.Context) {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": "ProductId not found"})
 		return
 	}
+	var req models.AddToBasket 
+	if err := ctx.ShouldBindJSON(&req); err!= nil {
+		h.logger.Error("Bind JSON error", "error", err.Error())
+        ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+        return
+	}
 
-	req := products.AddToBasketRequest{ProductId: id, UserId: claims.ID}
-
-	res, err := h.productClient.AddToBasket(context.Background(), &req)
+	res, err := h.productClient.AddToBasket(context.Background(), &products.AddToBasketRequest{
+		ProductId: id,
+		UserId: claims.ID,
+		PurchaseDate: req.PurchaseDate,
+		Quantity: req.Quantity,
+        Price: req.Price,
+	})
 	if err != nil {
 		h.logger.Error("AddToBasket", "error", err.Error())
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})

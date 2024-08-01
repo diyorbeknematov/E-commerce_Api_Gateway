@@ -62,6 +62,15 @@ definitions:
       name:
         type: string
     type: object
+  models.AddToBasket:
+    properties:
+      price:
+        type: number
+      purchase_date:
+        type: string
+      quantity:
+        type: integer
+    type: object
   models.Authenticated:
     properties:
       password:
@@ -570,6 +579,12 @@ paths:
         name: product_id
         required: true
         type: string
+      - description: Add to basket request
+        in: body
+        name: product
+        required: true
+        schema:
+          $ref: '#/definitions/models.AddToBasket'
       produces:
       - application/json
       responses:

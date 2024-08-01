@@ -73,3 +73,9 @@ type UpdateReviewById struct {
 	Rating    int32  `json:"rating,omitempty"`
 	Comment   string `json:"comment,omitempty"`
 }
+
+type AddToBasket struct {
+	PurchaseDate string  `json:"purchase_date,omitempty"`
+	Quantity     int32   `json:"quantity,omitempty"`
+	Price        float64 `json:"price,omitempty"`
+}

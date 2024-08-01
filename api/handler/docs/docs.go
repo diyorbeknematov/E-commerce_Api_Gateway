@@ -79,6 +79,15 @@ const docTemplate = `{
                         "name": "product_id",
                         "in": "path",
                         "required": true
+                    },
+                    {
+                        "description": "Add to basket request",
+                        "name": "product",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/models.AddToBasket"
+                        }
                     }
                 ],
                 "responses": {
@@ -1948,6 +1957,20 @@ const docTemplate = `{
                 },
                 "name": {
                     "type": "string"
+                }
+            }
+        },
+        "models.AddToBasket": {
+            "type": "object",
+            "properties": {
+                "price": {
+                    "type": "number"
+                },
+                "purchase_date": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "integer"
                 }
             }
         },

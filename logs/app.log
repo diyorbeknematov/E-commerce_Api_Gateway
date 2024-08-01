@@ -670,3 +670,4 @@
 {"time":"2024-08-01T01:03:36.437872254+05:00","level":"INFO","msg":"Response sent","status":200}
 {"time":"2024-08-01T01:04:05.828852153+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
 {"time":"2024-08-01T01:04:05.831682936+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T10:35:12.357802281+05:00","level":"INFO","msg":"Application started"}
