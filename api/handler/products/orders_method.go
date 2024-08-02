@@ -23,7 +23,7 @@ import (
 // @Success 200 {object} string
 // @Failure 400 {object} string
 // @Failure 500 {object} string
-// @Router /products/media/ [post]
+// @Router /api/media/ [post]
 func (h *productHandlerIml) PostMedia(ctx *gin.Context) {
 	h.logger.Info("UploadMediaProduct started")
 	header, _ := ctx.FormFile("file")
