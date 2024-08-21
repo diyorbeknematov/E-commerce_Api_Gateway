@@ -670,4 +670,64 @@
 {"time":"2024-08-01T01:03:36.437872254+05:00","level":"INFO","msg":"Response sent","status":200}
 {"time":"2024-08-01T01:04:05.828852153+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/users/list"}
 {"time":"2024-08-01T01:04:05.831682936+05:00","level":"INFO","msg":"Response sent","status":200}
-{"time":"2024-08-01T10:35:12.357802281+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T09:51:31.918528482+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T10:02:04.816835203+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T10:02:32.225863513+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T10:03:58.384943547+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/basket/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-08-01T10:03:58.426489913+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T10:04:28.152304175+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/basket"}
+{"time":"2024-08-01T10:04:28.15429637+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T10:04:55.233019856+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-08-01T10:04:55.234734595+05:00","level":"ERROR","msg":"ProducerMessage","error":"dial tcp 127.0.0.1:9092: connect: connection refused"}
+{"time":"2024-08-01T10:04:55.234866599+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-08-01T10:05:40.640496748+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-08-01T10:05:40.640844564+05:00","level":"ERROR","msg":"ProducerMessage","error":"dial tcp 127.0.0.1:9092: connect: connection refused"}
+{"time":"2024-08-01T10:05:40.640909168+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-08-01T10:05:46.189301649+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-08-01T10:05:46.189602914+05:00","level":"ERROR","msg":"ProducerMessage","error":"dial tcp 127.0.0.1:9092: connect: connection refused"}
+{"time":"2024-08-01T10:05:46.189656399+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-08-01T10:06:26.717384402+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-08-01T10:06:26.809805311+05:00","level":"ERROR","msg":"ProducerMessage","error":"[5] Leader Not Available: the cluster is in the middle of a leadership election and there is currently no leader for this partition and hence it is unavailable for writes"}
+{"time":"2024-08-01T10:06:26.80995385+05:00","level":"INFO","msg":"Response sent","status":500}
+{"time":"2024-08-01T10:06:30.762433565+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-08-01T10:06:31.771058859+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-08-01T10:09:52.466565445+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-08-01T10:09:53.472529133+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-08-01T10:10:32.917474603+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/orders/d8c74f1e-0131-497d-9e6a-f7fa9bfd6bc9"}
+{"time":"2024-08-01T10:10:33.923111271+05:00","level":"INFO","msg":"Response sent","status":201}
+{"time":"2024-08-01T15:04:15.542881075+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T15:05:42.083584849+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:05:42.145097258+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:06:02.724227529+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:06:02.734129025+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:06:13.357166992+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:06:13.362160511+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:08:25.142629394+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:08:25.158172816+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:08:40.163587119+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:08:40.170714502+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:08:50.882940881+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:08:50.889074747+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:09:21.680768162+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:09:21.686949535+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:09:46.95218889+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:09:46.961882954+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:10:08.256517319+05:00","level":"INFO","msg":"Request received","method":"GET","path":"/api/products/list"}
+{"time":"2024-08-01T15:10:08.26597315+05:00","level":"INFO","msg":"Response sent","status":200}
+{"time":"2024-08-01T15:13:07.402105941+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T15:14:16.30268172+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T15:16:26.795413921+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T15:18:50.192670658+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products"}
+{"time":"2024-08-01T15:18:50.19308235+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-08-01T15:23:01.168530475+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T15:24:11.626528146+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T15:24:44.849687404+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products/media"}
+{"time":"2024-08-01T15:24:44.850074824+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-08-01T15:25:15.807620864+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T15:25:19.515902463+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products/media"}
+{"time":"2024-08-01T15:25:19.516376727+05:00","level":"INFO","msg":"Response sent","status":403}
+{"time":"2024-08-01T15:26:07.493922905+05:00","level":"INFO","msg":"Application started"}
+{"time":"2024-08-01T15:26:26.191297159+05:00","level":"INFO","msg":"Request received","method":"POST","path":"/api/products/media"}
+{"time":"2024-08-01T15:26:26.191868991+05:00","level":"INFO","msg":"UploadMediaProduct started"}
+{"time":"2024-08-01T15:26:26.195940942+05:00","level":"INFO","msg":"UploadMediaProduct finished successfully"}
+{"time":"2024-08-01T15:26:26.19603114+05:00","level":"INFO","msg":"Response sent","status":200}

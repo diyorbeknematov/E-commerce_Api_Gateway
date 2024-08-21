@@ -75,7 +75,7 @@ func (c *controllerImpl) SetupRoutes(handler handler.MainHandler, logger *slog.L
 
 	// ----------------------------------- product service -----------------------------------------
 	{ // -----------  user ----------
-		router.POST("/media", hproduct.PostMedia) //ok
+		router.POST("/products/media", hproduct.PostMedia) //ok
 		router.POST("/orders/:product_id", hproduct.PostOrder) // tekshir ok
 	}
 

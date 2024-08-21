@@ -1,6 +1,7 @@
 package config
 
 import (
+	"database/sql"
 	"fmt"
 	"log"
 	"log/slog"
@@ -22,7 +23,7 @@ type Config struct {
 	DB_PORT           string
 	DB_USER           string
 	DB_PASSWORD       string
-	DB_CASBIN_DRIVER  string
+	DB_NAME           string
 	ACCESS_TOKEN      string
 }
 
@@ -41,7 +42,7 @@ func Load() Config {
 	config.DB_PORT = cast.ToString(coalesce("DB_PORT", "5432"))
 	config.DB_USER = cast.ToString(coalesce("DB_USER", "postgres"))
 	config.DB_PASSWORD = cast.ToString(coalesce("DB_PASSWORD", "123321"))
-	config.DB_CASBIN_DRIVER = cast.ToString(coalesce("DB_CASBIN_DRIVER", "postgres"))
+	config.DB_NAME = cast.ToString(coalesce("DB_NAME", "postgres"))
 	config.ACCESS_TOKEN = cast.ToString(coalesce("ACCESS_TOKEN", "key_is_really_easy"))
 
 	return config
@@ -57,8 +58,28 @@ func coalesce(env string, defaultValue interface{}) interface{} {
 
 func CasbinEnforcer(logger *slog.Logger) (*casbin.Enforcer, error) {
 	config := Load()
-	adapter, err := xormadapter.NewAdapter("postgres", fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s sslmode=disable", config.DB_HOST, config.DB_PORT, config.DB_USER, config.DB_CASBIN_DRIVER, config.DB_PASSWORD))
+	db, err := sql.Open("postgres", fmt.Sprintf("host=%s port=%s user=%s password=%s sslmode=disable",
+	config.DB_HOST, config.DB_PORT, config.DB_USER, config.DB_PASSWORD))
 	if err != nil {
+		log.Println("Eror connecting to database", "error", err.Error())
+		logger.Error("Error connecting to database", "error", err.Error())
+		return nil, err
+	}
+	defer db.Close()
+
+	_, err = db.Exec("DROP DATABASE IF EXISTS casbin;")
+	if err != nil {
+		log.Println("Error dropping table", "error", err.Error())
+        logger.Error("Error dropping table", "error", err.Error())
+        return nil, err
+	}
+
+	conn := fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s sslmode=disable",
+	config.DB_HOST, config.DB_PORT, config.DB_USER, config.DB_NAME, config.DB_PASSWORD)
+	fmt.Println(conn)
+	adapter, err := xormadapter.NewAdapter("postgres", conn)
+	if err != nil {
+		log.Println("error creating Casbin adapter", "error", err.Error())
 		logger.Error("Error creating Casbin adapter", "error", err.Error())
 		return nil, err
 	}
@@ -66,69 +87,66 @@ func CasbinEnforcer(logger *slog.Logger) (*casbin.Enforcer, error) {
 	enforcer, err := casbin.NewEnforcer("config/model.conf", adapter)
 	if err != nil {
 		logger.Error("Error creating Casbin enforcer", "error", err.Error())
+		log.Println("error creating Casbin enforcer", "error", err.Error())
 		return nil, err
 	}
 
 	err = enforcer.LoadPolicy()
 	if err != nil {
+		log.Println("error loading Casbin policy", "error", err.Error())
 		logger.Error("Error loading Casbin policy", "error", err.Error())
 		return nil, err
 	}
 
 	policies := [][]string{
-		// user user service
-		{"user", "/api/users", "GET"}, //ok
-		{"user", "/api/users", "PUT"}, //ok
-		{"user", "/api/users", "DELETE"}, //ok
-		{"user", "/api/users/recommendation", "GET"}, //ok
-		{"user", "/api/users/products", "GET"}, //ok
-	  
-		// admin user service
-		{"admin", "/api/users/:id", "GET"}, //ok
-		{"admin", "/api/users/:id", "PUT"}, //ok
-		{"admin", "/api/users/:id", "DELETE"}, //ok
-		{"admin", "/api/users", "POST"}, //ok
-		{"admin", "/api/users/products/:id", "GET"}, //ok
-		{"admin", "/api/users/list", "GET"}, //ok
-	  
-		// user product service
-		{"user", "/api/media", "POST"}, //ok
-		{"user", "/api/orders/:product_id", "POST"}, //ok
-		{"user", "/api/basket/:product_id", "POST"},//ok
-		{"user", "/api/basket", "GET"}, //ok
-		{"user", "/api/basket/:product_id", "DELETE"},//k
-		{"user", "/api/products/list", "GET"}, //ok
-		{"user", "/api/categories", "GET"}, //ok
-		{"user", "/api/reviews/:product_id", "GET"}, //ok
-		{"user", "/api/reviews/:product_id", "POST"},//ok
-		{"user", "/api/reviews/:id", "PUT"}, //ok
-		{"user", "/api/reviews/:id", "DELETE"},//k
-	  
-		// admin product service
-		{"admin", "/api/products/list", "GET"}, //ok
-		{"admin", "/api/products/:id", "GET"}, //ok
-		{"admin", "/api/products", "POST"}, //ok
-		{"admin", "/api/products/:id", "PUT"}, //ok
-		{"admin", "/api/products/:id", "DELETE"}, //ok
-		{"admin", "/api/categories", "GET"}, //ok
-		{"admin", "/api/categories", "POST"}, //ok
-		{"admin", "/api/categories/:id", "PUT"}, //ok
-		{"admin", "/api/categories/:id", "DELETE"}, //ok
-		{"admin", "/api/reviews", "GET"}, //ok
-		{"admin", "/api/reviews", "POST"},// ok
-		{"admin", "/api/reviews/admin/:id", "PUT"}, //ok
-		{"admin", "/api/reviews/admin/:id", "DELETE"},//o
-		{"admin", "/api/order/:product_id", "GET"}, //ok
-	   }
+		{"user", "/api/users", "GET"},
+		{"user", "/api/users", "PUT"},
+		{"user", "/api/users", "DELETE"},
+		{"user", "/api/users/recommendation", "GET"},
+		{"user", "/api/users/products", "GET"},
+		{"admin", "/api/users/:id", "GET"},
+		{"admin", "/api/users/:id", "PUT"},
+		{"admin", "/api/users/:id", "DELETE"},
+		{"admin", "/api/users", "POST"},
+		{"admin", "/api/users/products/:id", "GET"},
+		{"admin", "/api/users/list", "GET"},
+		{"user", "/api/products/media", "POST"},
+		{"user", "/api/orders/:product_id", "POST"},
+		{"user", "/api/basket/:product_id", "POST"},
+		{"user", "/api/basket", "GET"},
+		{"user", "/api/basket/:product_id", "DELETE"},
+		{"user", "/api/products/list", "GET"},
+		{"user", "/api/categories", "GET"},
+		{"user", "/api/reviews/:product_id", "GET"},
+		{"user", "/api/reviews/:product_id", "POST"},
+		{"user", "/api/reviews/:id", "PUT"},
+		{"user", "/api/reviews/:id", "DELETE"},
+		{"admin", "/api/products/list", "GET"},
+		{"admin", "/api/products/:id", "GET"},
+		{"admin", "/api/products", "POST"},
+		{"admin", "/api/products/:id", "PUT"},
+		{"admin", "/api/products/:id", "DELETE"},
+		{"admin", "/api/categories", "GET"},
+		{"admin", "/api/categories", "POST"},
+		{"admin", "/api/categories/:id", "PUT"},
+		{"admin", "/api/categories/:id", "DELETE"},
+		{"admin", "/api/reviews", "GET"},
+		{"admin", "/api/reviews", "POST"},
+		{"admin", "/api/reviews/admin/:id", "PUT"},
+		{"admin", "/api/reviews/admin/:id", "DELETE"},
+		{"admin", "/api/order/:product_id", "GET"},
+	}
 
 	_, err = enforcer.AddPolicies(policies)
 	if err != nil {
+		log.Println("error adding Casbin policy", "error", err.Error())
 		logger.Error("Error adding Casbin policy", "error", err.Error())
 		return nil, err
 	}
 
 	err = enforcer.SavePolicy()
 	if err != nil {
+		log.Println("Error saving Casbin policy", "error", err.Error())
 		logger.Error("Error saving Casbin policy", "error", err.Error())
 		return nil, err
 	}

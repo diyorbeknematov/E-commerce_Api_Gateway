@@ -4,7 +4,7 @@ import (
 	"api-geteway/config"
 	"api-geteway/generated/mainservice"
 	"api-geteway/generated/user"
-	"fmt"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
@@ -29,7 +29,7 @@ func (s *serviceManagerImpl) ProductService() mainservice.MainServiceClient {
 
 func NewServiceManager(cfg config.Config) (ServiceManager, error) {
 	connUser, err := grpc.NewClient(
-		"localhost:50050",
+		cfg.GRPC_USER_PORT,
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 	)
 	if err != nil {
@@ -37,7 +37,7 @@ func NewServiceManager(cfg config.Config) (ServiceManager, error) {
 	}
 
 	connProduct, err := grpc.NewClient(
-		fmt.Sprintf("localhost%s", cfg.GRPC_PRODUCT_PORT),
+		cfg.GRPC_PRODUCT_PORT,
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 	)
 	if err != nil {

@@ -661,6 +661,52 @@ const docTemplate = `{
                 }
             }
         },
+        "/api/products/media": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "description": "Api for upload a new photo",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "tags": [
+                    "Product"
+                ],
+                "summary": "UploadMediaProduct",
+                "parameters": [
+                    {
+                        "type": "file",
+                        "description": "createUserModel",
+                        "name": "file",
+                        "in": "formData",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
         "/api/products/{id}": {
             "get": {
                 "description": "Get a product by ID",
@@ -1809,52 +1855,6 @@ const docTemplate = `{
                         "description": "Internal Server Error",
                         "schema": {
                             "$ref": "#/definitions/models.ErrorResponse"
-                        }
-                    }
-                }
-            }
-        },
-        "/products/media/": {
-            "post": {
-                "security": [
-                    {
-                        "ApiKeyAuth": []
-                    }
-                ],
-                "description": "Api for upload a new photo",
-                "consumes": [
-                    "multipart/form-data"
-                ],
-                "tags": [
-                    "Product"
-                ],
-                "summary": "UploadMediaProduct",
-                "parameters": [
-                    {
-                        "type": "file",
-                        "description": "createUserModel",
-                        "name": "file",
-                        "in": "formData",
-                        "required": true
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "schema": {
-                            "type": "string"
-                        }
-                    },
-                    "400": {
-                        "description": "Bad Request",
-                        "schema": {
-                            "type": "string"
-                        }
-                    },
-                    "500": {
-                        "description": "Internal Server Error",
-                        "schema": {
-                            "type": "string"
                         }
                     }
                 }

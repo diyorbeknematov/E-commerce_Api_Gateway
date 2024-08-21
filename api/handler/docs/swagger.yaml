@@ -1055,6 +1055,35 @@ paths:
       summary: Get All Products
       tags:
       - Product
+  /api/products/media:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Api for upload a new photo
+      parameters:
+      - description: createUserModel
+        in: formData
+        name: file
+        required: true
+        type: file
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: UploadMediaProduct
+      tags:
+      - Product
   /api/reviews:
     get:
       consumes:
@@ -1719,35 +1748,6 @@ paths:
       summary: Get User Recommendations
       tags:
       - User
-  /products/media/:
-    post:
-      consumes:
-      - multipart/form-data
-      description: Api for upload a new photo
-      parameters:
-      - description: createUserModel
-        in: formData
-        name: file
-        required: true
-        type: file
-      responses:
-        "200":
-          description: OK
-          schema:
-            type: string
-        "400":
-          description: Bad Request
-          schema:
-            type: string
-        "500":
-          description: Internal Server Error
-          schema:
-            type: string
-      security:
-      - ApiKeyAuth: []
-      summary: UploadMediaProduct
-      tags:
-      - Product
 securityDefinitions:
   ApiKeyAuth:
     in: header
